@@ -19,9 +19,28 @@
 	
 	调用
 	例：
-		btn01.onclick =function(){
+	```javascript
+		var obj={
+			_w:"600",  //宽
+			_h:"200",  //高
+			title:"标题",  //标题
+			content:"内容",  //文字
+			keyboard:true,  //叉号
+			keyEsc:true,  //键盘操作
+			moveable:false,	 //移动
+			backdrop:true,  //遮罩层显示
+			backhead:"rgb(255,255,255)",  //对话框颜色
+			show:true,  //立即显示
+			
+		};
+		var modal01 = new Modal(obj);
+		
+		 var btn01 = document.getElementById("btn-lg");
+		 btn01.onclick =function(){
+			 console.log("ok")
 			 modal01.bindAlert()
-		}
+		 }
+	```
 + 3 作者
 	> 卖核弹的小女孩
 	> 
